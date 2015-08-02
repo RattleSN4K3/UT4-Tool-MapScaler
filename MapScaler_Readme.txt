@@ -1,6 +1,6 @@
 Map Scaler
 
-Version: 1
+Version: 1.1
 Compatibility: Build 2637632 (7/29/2015)
 Type: Blueprint
 by RattleSN4K3
