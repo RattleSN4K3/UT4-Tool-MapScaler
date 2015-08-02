@@ -17,3 +17,14 @@ Usage:
    !!! Note: The "Update" checkbox won't be shown as ticked ever.
 
  - After the scaling process is done, which should be immediately, you can delete the actor
+
+
+
+Changelog:
+
+v1.1
+- Added: Scale BSP
+- Changed: Hide irrelevant categories
+
+v1.0 - Initial release
+- Scale actors (such as StaticMeshActor, SkeletalMeshActor, etc.)
