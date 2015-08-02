@@ -1,5 +1,5 @@
 # UT4-Tool-MapScaler
-Let's you scale your map
+Lets you scale your map
 
 ## Preview
 ![Preview](../gh-pages/resources/preview.gif)
