@@ -1,3 +1,13 @@
+v1.2
+- Added: Field for ignoring specific actor/object classes for scaling
+- Added: Re-align pickup bases on floor
+- Added: Re-align player starts on floor
+- Added: Option for re-aligning pickup bases
+- Added: Option for non-uniform scale
+- Added: Option for scaling Jump pad properties
+- Changed: Removed debug code
+- Fixed: Minor issues (such as typos, code cleanup, etc.)
+
 v1.1
 - Added: Scale BSP
 - Changed: Hide irrelevant categories
