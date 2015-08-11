@@ -2,7 +2,7 @@ Map Scaler
 
 This is a simple script to be used in the editor which allows to scale the current level.
 
-Version: 1.2
+Version: 1.3
 Compatibility: Build 2637632 (7/29/2015)
 Type: Blueprint
 by RattleSN4K3
@@ -27,6 +27,11 @@ Usage:
 
 
 Changelog:
+
+v1.3
+- Added: Undo system
+- Added: Option to turn off debug messages in output log
+- Changed: Renamed "Update" to "Scale"
 
 v1.2
 - Added: Field for ignoring specific actor/object classes for scaling

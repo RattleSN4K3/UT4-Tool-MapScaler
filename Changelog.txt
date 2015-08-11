@@ -1,3 +1,8 @@
+v1.3
+- Added: Undo system
+- Added: Option to turn off debug messages in output log
+- Changed: Renamed "Update" to "Scale"
+
 v1.2
 - Added: Field for ignoring specific actor/object classes for scaling
 - Added: Re-align pickup bases on floor
