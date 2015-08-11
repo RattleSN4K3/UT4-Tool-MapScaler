@@ -12,9 +12,9 @@ Lets you scale your map
 ## Usage:
  - Open your map
  - Place the _**MapScaler**_ actor into your map
- - Select the actor and set up `Update scale` to your desired scale
- - Click on `Update` once in order to start the process
+ - Select the actor and set up `Scale factor` to your desired scale
+ - Click on `Scale` once in order to start the process
 
-   **!!! Note**: The `Update` checkbox won't be shown as ticked ever.
+   **!!! Note**: The `Scale` checkbox won't be shown as ticked ever.
 
  - After the scaling process is done, which should be immediately, you can delete the actor
