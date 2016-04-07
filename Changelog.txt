@@ -1,3 +1,36 @@
+v1.4
+- Added: Optional native backend
+- Added: Matinee sequences scaling (movement track)
+- Added: Light properties scaling (e.g. Directional, Point, Sky)
+- Added: Fog properties scaling (Exponential, Atmospheric)
+- Added: Undo data updates for new actors
+- Added: Option to scale selected objects only
+- Added: Option to choose custom pivot (for scaling)
+- Added: Option to store and restore selection actors
+- Added: Map info in data section
+- Added: Ignoring additional actors when scaling (Pickup token, Camera actors)
+- Added: Info about resulting scale if multiple scaling processes were done
+- ADded: Properly revert scaling for mixed undo data (all/selected)
+- Added: Option to use pivot's bounding instead of center
+- Removed: Component scaling not used anymore
+- Changed: Transform selection restored (for proper grid)
+- Changed: Proper data size calculation
+- Changed: Proper tooltips for various properties
+- Changed: Minor changes to clean up code
+- Fixed: Crash for scaling with a factor of 0.0
+- Optimized: Aligning of pickup classes (and tokens)
+- Optimized: Dropping actors' initialization
+- Optimized: Iteration of undo data
+- Optimized: Snapshot data check
+
+Native support:
+- Added: Notifications
+- Added: Extended light properties scaling
+- Added: Version info
+
+Experimental:
+- Added: Mirror mode
+
 v1.3
 - Added: Undo system
 - Added: Option to turn off debug messages in output log
