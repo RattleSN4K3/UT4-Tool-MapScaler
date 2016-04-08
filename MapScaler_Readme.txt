@@ -37,11 +37,10 @@ Usage:
  - Place the "MapScaler" actor into your map
  - Select the actor and set up "Scale factor" to your desired scale
  - Click on "Scale Level" once in order to start the process
-   
-   !!! Note: Most of the action checkboxes (like "Scale Level", "Undo", etc.) won't be shown as ticked ever.
-
  - After the scaling process is done, which should be immediately, you can delete the actor
- - Keep in mind, that some lighting properties are also scaled. Always check the scaling properties
+
+n.b. 1: Most of the action checkboxes (like "Scale Level", "Undo", etc.) won't be shown as ticked ever.
+n.b. 2: Keep in mind, that some lighting properties are also scaled. Always check the scaling properties
 
 
 

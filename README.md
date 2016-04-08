@@ -1,4 +1,4 @@
-# UT4-Tool-MapScaler
+# MapScaler
 Lets you scale your map
 
 ## Preview
@@ -25,11 +25,10 @@ Lets you scale your map
  - Place the _**MapScaler**_ actor into your map
  - Select the actor and set up `Scale Factor` to your desired scale
  - Click on `Scale` once in order to start the process
-
-   **!!! Note**: Most of the checkboxes (like `Scale Level`, `Undo`, `Redo` etc.) won't be shown as ticked ever.
-
  - After the scaling process is done, which should be immediately, you can delete the actor
- - Keep in mind, that some lighting properties are also scaled. Always check the scaling properties
+
+**Note 1**: Most of the checkboxes (like `Scale Level`, `Undo`, `Redo` etc.) won't be shown as ticked ever.  
+**Note 2**: Keep in mind, that some lighting properties are also scaled. Always check the scaling properties
 
 
 ## Native support:
