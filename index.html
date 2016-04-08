@@ -1,74 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <title>MapScaler (for Unreal Tournament) by RattleSN4K3</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>MapScaler (for Unreal Tournament) by RattleSN4K3</title>
   </head>
-
   <body>
-    <div id="container">
-      <div class="inner">
+    <div class="wrapper">
+      <header>
+        <h1>MapScaler (for Unreal Tournament)</h1>
+        <p>Lets you scale your map</p>
 
-        <header>
-          <h1>MapScaler (for Unreal Tournament)</h1>
-          <h2>Lets you scale your map</h2>
-        </header>
+        <p class="view"><a href="https://github.com/RattleSN4K3/UT4-Tool-MapScaler">View the Project on GitHub <small>RattleSN4K3/UT4-Tool-MapScaler</small></a></p>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/RattleSN4K3/UT4-Tool-MapScaler/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/RattleSN4K3/UT4-Tool-MapScaler/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/RattleSN4K3/UT4-Tool-MapScaler" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
 
-        <hr>
-
-        <section id="main_content">
-          <h2>
-<a id="preview" class="anchor" href="#preview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preview</h2>
+        <ul>
+          <li><a href="https://github.com/RattleSN4K3/UT4-Tool-MapScaler/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/RattleSN4K3/UT4-Tool-MapScaler/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/RattleSN4K3/UT4-Tool-MapScaler">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a id="preview" class="anchor" href="#preview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Preview</h2>
 
 <p><img src="resources/preview.gif" alt="Preview"></p>
 
 <h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation:</h2>
+<a id="key-features" class="anchor" href="#key-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Key features:</h2>
+
+<ul>
+<li>Scale down/up an entire map</li>
+<li>Scale only selected objects</li>
+<li>Align irregular Actors to floor or keep them floating</li>
+<li>Non-uniform scaling</li>
+<li>Undo scaling on the fly</li>
+<li>Store/restore selection</li>
+<li>Work on any scaled level, changes will be updated to previous scales</li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation:</h2>
 
 <ul>
 <li>Extract the archive</li>
 <li>Move/copy "MapScaler.uasset" into the content folder of <em>Unreal Tournament</em><br>
-<code>.\UnrealTournament\Content</code>
-</li>
+<code>.\UnrealTournamentEditor\UnrealTournament\Content</code><br>
+('UnrealTournamentEditor' is the root of the editor installation and may differ)</li>
 </ul>
 
 <h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage:</h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage:</h2>
 
 <ul>
 <li>Open your map</li>
 <li>Place the <em><strong>MapScaler</strong></em> actor into your map</li>
-<li>Select the actor and set up <code>Scale factor</code> to your desired scale</li>
-<li>
-<p>Click on <code>Scale</code> once in order to start the process</p>
-
-<p><strong>!!! Note</strong>: The <code>Scale</code> checkbox won't be shown as ticked ever.</p>
-</li>
-<li><p>After the scaling process is done, which should be immediately, you can delete the actor</p></li>
+<li>Select the actor and set up <code>Scale Factor</code> to your desired scale</li>
+<li>Click on <code>Scale</code> once in order to start the process</li>
+<li>After the scaling process is done, which should be immediately, you can delete the actor</li>
 </ul>
-        </section>
 
-        <footer>
-          MapScaler (for Unreal Tournament) is maintained by <a href="https://github.com/RattleSN4K3">RattleSN4K3</a><br>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
+<p><strong>Note 1</strong>: Most of the checkboxes (like <code>Scale Level</code>, <code>Undo</code>, <code>Redo</code> etc.) won't be shown as ticked ever.<br>
+<strong>Note 2</strong>: Keep in mind, that some lighting properties are also scaled. Always check the scaling properties</p>
 
-        
-      </div>
+<h2>
+<a id="native-support" class="anchor" href="#native-support" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Native support:</h2>
+
+<p>In order to fully scale every scale-able and noticeable properties of some actors, the <em>MapScaler</em>
+has to use a native plugin. The engine does not support changing some properties from the Blueprint
+context, thus the native plugin features some methods to changes these from the <em>MapScaler</em> actor.</p>
+
+<p>Only some light properties of static/stationary lights (including <em>SkyLights</em>, <em>DirectionalLights</em>, etc.)
+will require the need of the native support. Depending on the configuration, the <em>MapScaler</em> will state
+whether a plugin is required or not in the "Native support" field/property in the details panel.</p>
+
+<p>In order to active the native support, you only have to install the native plugin. Once installed,
+the <em>MapScaler</em> will print out the running version.</p>
+
+<p>Note:
+The native plugin is not interchangeable throughout engine versions / editor builds. Every time the
+editor is updated, the <em>MapScaler</em> plugin has to be updated.</p>
+
+<p>The native plugin can be found <a href="//github.com/RattleSN4K3/UT4-Tool-MapScaler/releases/latest">here</a>.</p>
+
+<h2>
+<a id="configuration" class="anchor" href="#configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Configuration:</h2>
+
+<p>The <em>MapScaler</em> has several different options to configure the scaling, what type of objects
+are scaled, what properties should be scaled or simply check some data stats. You can find
+these options in the details tab while having the <em>MapScaler</em> selected.</p>
+
+<p>Each time any property is changed, the <em>MapScaler</em> will check the map, process some data and
+stores it into the local storage. This is used for various features after having scaled a
+map or undo the scaling. Due to this mechanism, changing various properties may take time
+depending on the size / actor count of the map.</p>
+
+<p>Check the <strong>MapScaler_Readme.txt</strong> for more information.</p>
+
+<h2>
+<a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Changelog:</h2>
+
+<p>v1.4</p>
+
+<ul>
+<li>Added: Optional native backend</li>
+<li>Added: Matinee sequences scaling (movement track)</li>
+<li>Added: Light properties scaling (e.g. Directional, Point, Sky)</li>
+<li>Added: Fog properties scaling (Exponential, Atmospheric)</li>
+<li>Added: Undo data updates for new actors</li>
+<li>Added: Option to scale selected objects only</li>
+<li>Added: Option to choose custom pivot (for scaling)</li>
+<li>Added: Option to store and restore selection actors</li>
+<li>Added: Map info in data section</li>
+<li>Added: Ignoring additional actors when scaling (Pickup token, Camera actors)</li>
+<li>Added: Info about resulting scale if multiple scaling processes were done</li>
+<li>ADded: Properly revert scaling for mixed undo data (all/selected)</li>
+<li>Added: Option to use pivot's bounding instead of center</li>
+<li>Removed: Component scaling not used anymore</li>
+<li>Changed: Transform selection restored (for proper grid)</li>
+<li>Changed: Proper data size calculation</li>
+<li>Changed: Proper tooltips for various properties</li>
+<li>Changed: Minor changes to clean up code</li>
+<li>Fixed: Crash for scaling with a factor of 0.0</li>
+<li>Optimized: Aligning of pickup classes (and tokens)</li>
+<li>Optimized: Dropping actors' initialization</li>
+<li>Optimized: Iteration of undo data</li>
+<li>Optimized: Snapshot data check</li>
+</ul>
+
+<p>Native support:</p>
+
+<ul>
+<li>Added: Notifications</li>
+<li>Added: Extended light properties scaling</li>
+<li>Added: Version info</li>
+</ul>
+
+<p>Experimental:</p>
+
+<ul>
+<li>Added: Mirror mode</li>
+</ul>
+
+<p>v1.3</p>
+
+<ul>
+<li>Added: Undo system</li>
+<li>Added: Option to turn off debug messages in output log</li>
+<li>Changed: Renamed "Update" to "Scale"</li>
+</ul>
+
+<p>v1.2</p>
+
+<ul>
+<li>Added: Field for ignoring specific actor/object classes for scaling</li>
+<li>Added: Re-align pickup bases on floor</li>
+<li>Added: Re-align player starts on floor</li>
+<li>Added: Option for re-aligning pickup bases</li>
+<li>Added: Option for non-uniform scale</li>
+<li>Added: Option for scaling Jump pad properties</li>
+<li>Changed: Removed debug code</li>
+<li>Fixed: Minor issues (such as typos, code cleanup, etc.)</li>
+</ul>
+
+<p>v1.1</p>
+
+<ul>
+<li>Added: Scale BSP</li>
+<li>Changed: Hide irrelevant categories</li>
+</ul>
+
+<p>v1.0 - Initial release</p>
+
+<ul>
+<li>Scale actors (such as StaticMeshActor, SkeletalMeshActor, etc.)</li>
+</ul>
+
+<h2>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Author</h2>
+
+<p>RattleSN4K3</p>
+
+<h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits:</h2>
+
+<ul>
+<li>Neil Moore alias CaptainMigraine<br>
+Initial idea / requests for scaling his map DM-Lea to match some changes to the movement scale</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/RattleSN4K3">RattleSN4K3</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
   </body>
 </html>
