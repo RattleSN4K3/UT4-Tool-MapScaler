@@ -175,7 +175,7 @@ header ul {
 }
 
 header li {
-  width:89px;
+  width:119px;
   float:left;
   border-right:1px solid #e0e0e0;
   height:40px;
@@ -218,7 +218,7 @@ strong {
 
 header ul li + li + li {
   border-right:none;
-  width:89px;
+  width:119px;
 }
 
 header ul a strong {
